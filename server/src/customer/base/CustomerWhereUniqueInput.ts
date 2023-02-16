@@ -23,5 +23,15 @@ class CustomerWhereUniqueInput {
   @Field(() => String)
   id!: string;
 }
+@InputType()
+class ProductWhereUniqueInput {
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @Field(() => String)
+  id!: string;
+}
 
-export { CustomerWhereUniqueInput };
+export { CustomerWhereUniqueInput ,ProductWhereUniqueInput};
